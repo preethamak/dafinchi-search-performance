@@ -1,25 +1,33 @@
-# Dafinchi Search Performance Review
+# Dafinchi Search Audience and Growth Analysis
 
 **Snapshot:** November 15, 2026 · **Property:** `dafinchi.ai`
 
-This shareable report summarizes visible Bing Webmaster Tools, Google Search Console, and Bing AI Performance figures for Dafinchi. It includes the source date ranges, query and page opportunities, country/device splits, Google indexing status, charts, and practical recommendations.
+This report connects Bing Webmaster Tools and Google Search Console data to audience behavior, likely research intent, content performance, indexing, and product-growth actions. It is a point-in-time analysis, not a live dashboard.
 
-## Open the report
+## What the numbers suggest
 
-- [View the Jupyter notebook](dafinchi-search-performance.ipynb) — charts are embedded in the notebook preview; the data and chart code are also included.
+- **Bing is the stronger visible discovery channel:** 392 clicks, about 20K impressions, and 1.96% CTR (Aug 15-Nov 14). Google Search Console reports 8 clicks and 214 impressions (Aug 14-Nov 13). The windows differ by one day; compare directionally.
+- **Search activity is desktop-led:** desktop drove 96.7% of Bing clicks from about 89% of impressions. Mobile drove 3.3% of clicks from about 11% of impressions; mobile CTR was 0.59% vs 2.13% desktop.
+- **Country mix has an outlier to investigate:** the US contributed 36.5% of Bing clicks and about 70.5% of impressions. China contributed 40.6% of clicks from about 8.5% of impressions (9.29% CTR). Check its query/page mix before inferring user needs or localizing.
+- **The visible demand is catalyst-led:** Whirlpool/Section 232, A. O. Smith inventory/China demand, Ameris CRE concentration, Abbott/Exact Sciences, and Axsome cash runway. The top five visible Bing query rows total about 2,770 impressions and zero clicks, with average positions 1.79-5.83.
+- **Google coverage is the first large constraint:** Search Console shows 1 indexed page vs 26,810 not indexed (last update Nov 9); only the homepage appears in the three-month page report.
+- **AI visibility exists but is not traffic measurement:** Bing AI Performance shows 38.8K citations and 94 average cited pages from Microsoft Copilots and Partners. Citations do not equal visits or conversions.
 
-## Headline figures
+## Likely search-led user groups
 
-| Source | Range | Clicks | Impressions | CTR | Avg. position |
-|---|---|---:|---:|---:|---:|
-| Bing Search Performance | Aug 15–Nov 14, 2026 | 392 | 20K* | 1.96% | Not shown overall |
-| Google Search Console | Aug 14–Nov 13, 2026 | 8 | 214 | 3.7% | 3.8 |
+These are intent hypotheses, not demographic facts: (1) company researchers tracking earnings catalysts; (2) analysts comparing peers or following themes; (3) brand-aware visitors validating Dafinchi. Device and country rows describe search activity, not identified people.
 
-Google Search Console showed 1 indexed page and 26,810 not indexed pages. Bing’s mobile row showed 13 clicks from 2.2K impressions (0.59% CTR). Google Analytics was not accessible in the browser session, so no Analytics figures are included.
+## Recommended order
 
-## Data notes
+1. Sample and classify the large discovered/crawled-not-indexed URL groups; fix templates, canonicals, internal links, and sitemap scope for valuable pages.
+2. Rewrite page titles/descriptions and above-the-fold summaries for high-impression, zero-click topics.
+3. Build concise catalyst briefs with source passages and paths into comparison, Keyword Scan, and Earnings Chat.
+4. Improve mobile result and reading experience, then inspect the high-CTR China segment by query and landing page.
+5. Instrument organic landing-to-product actions in GA4 when access is available. GA4 was not accessible during this review.
 
-- Bing rounds some values, including the 20K impression total and query/page rows shown as 1.0K.
-- The Bing and Google Search Console reporting windows differ by one day.
-- Bing’s AI Topic Portfolio is experimental; its opportunity suggestions need relevance review.
-- This is a point-in-time transcription of visible reports, not a live dashboard.
+## Shareable files
+
+- [Full notebook with calculated audience shares, charts, and supporting rows](dafinchi-search-performance.ipynb)
+- [PDF analysis brief](dafinchi-search-growth-analysis.pdf)
+
+**Measurement notes:** Bing impressions are rounded in the UI; the country impression-share estimates use those rounded figures. GSC and Bing use different reporting windows and systems. The five visible Google query rows sum to 145 impressions, leaving 69 aggregate impressions not represented in those rows.
