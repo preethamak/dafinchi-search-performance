@@ -1,33 +1,35 @@
-# Dafinchi Search Audience and Growth Analysis
+# Dafinchi: Search Demand to Product Growth
 
-**Snapshot:** November 15, 2026 · **Property:** `dafinchi.ai`
+**Snapshot:** November 15, 2026 · **Property:** `dafinchi.ai`  
+**The decision:** Pilot a company-catalyst research journey that takes a searcher from a specific earnings question to a clear answer, transcript evidence, and a useful next action in Dafinchi.
 
-This report connects Bing Webmaster Tools and Google Search Console data to audience behavior, likely research intent, content performance, indexing, and product-growth actions. It is a point-in-time analysis, not a live dashboard.
+## Why this is the best-supported opportunity
 
-## What the numbers suggest
+Bing’s top five visible queries had about **2,770 impressions and zero clicks**. They ask about specific company events: Whirlpool/tariffs (~1,000), A. O. Smith/inventory/China demand (702), Ameris/CRE exposure (530), Abbott/forecast and acquisition (295), and Axsome/cash runway (243). The visible audience need is company-specific financial research—not a proven demographic or job title.
 
-- **Bing is the stronger visible discovery channel:** 392 clicks, about 20K impressions, and 1.96% CTR (Aug 15-Nov 14). Google Search Console reports 8 clicks and 214 impressions (Aug 14-Nov 13). The windows differ by one day; compare directionally.
-- **Search activity is desktop-led:** desktop drove 96.7% of Bing clicks from about 89% of impressions. Mobile drove 3.3% of clicks from about 11% of impressions; mobile CTR was 0.59% vs 2.13% desktop.
-- **Country mix has an outlier to investigate:** the US contributed 36.5% of Bing clicks and about 70.5% of impressions. China contributed 40.6% of clicks from about 8.5% of impressions (9.29% CTR). Check its query/page mix before inferring user needs or localizing.
-- **The visible demand is catalyst-led:** Whirlpool/Section 232, A. O. Smith inventory/China demand, Ameris CRE concentration, Abbott/Exact Sciences, and Axsome cash runway. The top five visible Bing query rows total about 2,770 impressions and zero clicks, with average positions 1.79-5.83.
-- **Google coverage is the first large constraint:** Search Console shows 1 indexed page vs 26,810 not indexed (last update Nov 9); only the homepage appears in the three-month page report.
-- **AI visibility exists but is not traffic measurement:** Bing AI Performance shows 38.8K citations and 94 average cited pages from Microsoft Copilots and Partners. Citations do not equal visits or conversions.
+Some Dafinchi pages do earn clicks: the Broadcom, Altria, and Synopsys examples together had **34 clicks from 365 impressions (9.3% CTR)**, versus **1.96%** across Bing overall. This selected, small sample is a set of pages to study, not proof of why they performed well.
 
-## Likely search-led user groups
+Google Search Console showed **1 indexed page and 26,810 not indexed**, with only the homepage in its performance page report. Important URLs need review by page type and indexing reason; the counts do not mean every URL should be indexed.
 
-These are intent hypotheses, not demographic facts: (1) company researchers tracking earnings catalysts; (2) analysts comparing peers or following themes; (3) brand-aware visitors validating Dafinchi. Device and country rows describe search activity, not identified people.
+## What we should build and test
 
-## Recommended order
+On a small set of company research pages, connect the user’s task:
 
-1. Sample and classify the large discovered/crawled-not-indexed URL groups; fix templates, canonicals, internal links, and sitemap scope for valuable pages.
-2. Rewrite page titles/descriptions and above-the-fold summaries for high-impression, zero-click topics.
-3. Build concise catalyst briefs with source passages and paths into comparison, Keyword Scan, and Earnings Chat.
-4. Improve mobile result and reading experience, then inspect the high-CTR China segment by query and landing page.
-5. Instrument organic landing-to-product actions in GA4 when access is available. GA4 was not accessible during this review.
+**Search for a company catalyst → understand the key change → verify it in the earnings transcript → continue to compare companies or explore the topic in Dafinchi.**
 
-## Shareable files
+Start by reviewing the Whirlpool Section 232 page (975 impressions, zero clicks, average position 1.79), A. O. Smith demand signals (415, zero, 2.26), and Ameris Q1 2025 transcript (530, zero, 4.39). Check the live search result and page before changing it. Then compare with the Altria, Synopsys, and Broadcom click-winning pages.
 
-- [Full notebook with calculated audience shares, charts, and supporting rows](dafinchi-search-performance.ipynb)
-- [PDF analysis brief](dafinchi-search-growth-analysis.pdf)
+Before judging product growth, Analytics must show whether organic visitors continue to transcript reading, comparison, Keyword Scan, Earnings Chat, signup, or return. Google Analytics was inaccessible during this review.
 
-**Measurement notes:** Bing impressions are rounded in the UI; the country impression-share estimates use those rounded figures. GSC and Bing use different reporting windows and systems. The five visible Google query rows sum to 145 impressions, leaving 69 aggregate impressions not represented in those rows.
+## Evidence boundaries
+
+- Bing Search Performance: 392 clicks, about 20K impressions, 1.96% CTR (Aug 15–Nov 14, 2026).
+- Google Search Console: 8 clicks, 214 impressions, 3.7% CTR, average position 3.8 (Aug 14–Nov 13).
+- Bing mobile CTR was 0.59% vs. 2.13% desktop; country and device reports describe search activity, not identified people.
+- China’s Bing row shows 159 clicks from about 1.7K impressions (9.29% CTR), an outlier to inspect by query and landing page before taking market-specific action.
+- Search reports do not show product usage, conversion, retention, or whether traffic is human vs. automated.
+
+## Files
+
+- [Analysis notebook](dafinchi-search-performance.ipynb)
+- [Product-growth brief (PDF)](dafinchi-search-growth-analysis.pdf)
